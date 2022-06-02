@@ -1,4 +1,4 @@
-package com.desuzala.movieme;
+package com.dersuzala.movieme;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.desuzala.movieme;
+package com.dersuzala.movieme;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
