@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: movie-me
+  labels:
+    app: movie-me
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: movie-me
+  template:
+    metadata:
+      labels:
+        app: movie-me
+    spec:
+      containers:
+        - name: movie-me
+          image: jorgesanzb/movie-me
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
