@@ -1,5 +1,6 @@
 apiVersion: v2
-appVersion: lts
+appVersion: 0.0.1
 description: List and recommendation app.
 name: movie-me
 version: 0.0.1
+type: application

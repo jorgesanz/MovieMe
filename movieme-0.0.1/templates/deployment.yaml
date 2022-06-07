@@ -19,4 +19,6 @@ spec:
           image: jorgesanzb/movie-me
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - name: {{ .Values.deployment.containerPortName }}
+              containerPort: {{ .Values.deployment.containerPort }}
+              protocol: TCP

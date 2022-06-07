@@ -1,14 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: movie-me-service
+  name: movie-me
   labels:
-    run: movie-me-service
+    app: movie-me
 spec:
   type: NodePort
   ports:
     - port: {{ .Values.service.port }}
       protocol: TCP
-      targetPort: {{ .Values.service.targetPort }}
+      targetPort: {{ .Values.deployment.containerPortName }}
+      nodePort: 30007 #https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport not necessary but clarify for better understanding
   selector:
     app: movie-me
