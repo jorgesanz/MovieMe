@@ -1,0 +1,7 @@
+releases:
+  - name: prom-norbac-ubuntu
+    namespace: prometheus
+    chart: prometheus-community/prometheus
+    set:
+      - name: rbac.create
+        value: false

@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  movie-me:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-06-08T11:43:53.734301245+02:00"
+    description: List and recommendation app.
+    digest: 7630a259f6b6c517fb1621c0806c36d9926ef9776d26e5fb5b533547b6c14d3b
+    name: movie-me
+    type: application
+    urls:
+    - movie-me-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-06-08T11:43:53.73409156+02:00"
